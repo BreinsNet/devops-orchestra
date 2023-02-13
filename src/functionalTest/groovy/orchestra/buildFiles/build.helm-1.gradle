@@ -1,0 +1,9 @@
+plugins {
+    id('devops-orchestra')
+}
+
+helm {
+    namespace = 'test'
+    chartName = 'test'
+    timeout = 'test'
+}

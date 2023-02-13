@@ -1,0 +1,5 @@
+plugins {
+    id('devops-orchestra')
+}
+
+println(project.ext.getVersion('asdf'))

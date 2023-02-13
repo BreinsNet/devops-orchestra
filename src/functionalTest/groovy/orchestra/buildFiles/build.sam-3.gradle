@@ -1,0 +1,16 @@
+plugins {
+    id('devops-orchestra')
+}
+
+sam {
+    templateFile = 'test1'
+    stackName = 'test1'
+    region = 'XXX'
+    parameters = [
+        TEST1: 'value1'
+    ]
+    capabilities = [
+        'CAPABILITY_IAM',
+        'CAPABILITY_AUTO_EXPAND'
+    ]
+}

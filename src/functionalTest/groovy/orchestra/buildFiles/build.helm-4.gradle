@@ -1,0 +1,14 @@
+plugins {
+    id('devops-orchestra')
+}
+
+helm {
+    namespace = 'test'
+    chartName = 'test'
+    valuesList = ['value1', 'value2']
+    timeout = 'test'
+    setKeyValues = [
+        'key1': 'value1',
+        'key2': 'value2',
+    ]
+}

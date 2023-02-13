@@ -1,0 +1,11 @@
+plugins {
+    id('devops-orchestra')
+}
+
+lambda {
+    name = 'test'
+    type = 'node'
+    srcPath = 'test'
+    bucketName = 'test'
+    version = 'test'
+}

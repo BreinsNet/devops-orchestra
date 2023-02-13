@@ -1,0 +1,68 @@
+plugins {
+    id('devops-orchestra')
+}
+
+ansible {
+    path = 'test'
+    playbook = 'test'
+    inventory = 'test'
+    host = 'test'
+    diff = true
+}
+
+aws {
+    clusterName = 'test'
+    bucketName = 'test'
+    ssmToYaml = [
+      key: 'test',
+      file: 'test'
+    ]
+}
+
+lambda {
+    name = 'test'
+    type = 'python'
+    srcPath = 'test'
+    bucketName = 'test'
+    version = 'test'
+}
+
+git {
+    path = 'test'
+}
+
+cfn {
+    templates = [
+        [
+            filePath: 'test1',
+            stackName: 'test1',
+            cfnParams: [
+                TEST1: 'value1'
+            ]
+        ],
+        [
+            filePath: 'test2',
+            stackName: 'test2',
+            cfnParams: [
+                TEST2: 'value2'
+            ]
+        ]
+    ]
+}
+
+sam {
+    templateFile = 'test1'
+    stackName = 'test1'
+}
+
+docker {
+    tag = 'test'
+    imageName = 'test'
+    servicePort = 'test'
+    url = 'test'
+}
+
+helm {
+    namespace = 'test'
+    chartName = 'test'
+}

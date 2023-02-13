@@ -1,0 +1,8 @@
+plugins {
+    id('devops-orchestra')
+}
+
+sam {
+    templateFile = 'test1'
+    stackName = 'test1'
+}

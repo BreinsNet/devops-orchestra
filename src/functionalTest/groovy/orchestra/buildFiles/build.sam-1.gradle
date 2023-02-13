@@ -1,0 +1,11 @@
+plugins {
+    id('devops-orchestra')
+}
+
+sam {
+    templateFile = 'test1'
+    stackName = 'test1'
+    parameters = [
+        TEST1: 'value1'
+    ]
+}

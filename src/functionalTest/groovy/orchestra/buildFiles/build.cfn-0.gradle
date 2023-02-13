@@ -1,0 +1,12 @@
+plugins {
+    id('devops-orchestra')
+}
+
+cfn {
+    templates = [
+        [
+            filePath: 'test1',
+            stackName: 'test1',
+        ],
+    ]
+}

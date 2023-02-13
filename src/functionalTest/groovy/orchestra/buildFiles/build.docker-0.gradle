@@ -1,0 +1,10 @@
+plugins {
+    id('devops-orchestra')
+}
+
+docker {
+    tag = 'test'
+    imageName = 'test'
+    servicePort = 'test'
+    url = 'test'
+}
